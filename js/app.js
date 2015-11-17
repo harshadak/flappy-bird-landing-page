@@ -6,6 +6,15 @@ $(document).ready(function() {
 		  slidesToShow: 3,
 		  responsive: [
 		    {
+		      breakpoint: 1024,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 3,
+		        infinite: true,
+		        dots: true
+		      }
+		    },
+		    {
 		      breakpoint: 768,
 		      settings: {
 		        arrows: false,
@@ -21,6 +30,15 @@ $(document).ready(function() {
 		        centerMode: true,
 		        centerPadding: '40px',
 		        slidesToShow: 1
+		      }
+		    },
+		    {
+		      breakpoint: 320,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 3,
+		        infinite: true,
+		        dots: true
 		      }
 		    }
 		  ],

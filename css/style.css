@@ -40,7 +40,7 @@ body {
 	-moz-border-radius: 1rem;
 	border-radius: 1rem;
 	margin-top: 40rem;
-	margin-bottom: 2rem;
+	margin-bottom: 6rem;
 	padding: 1.5rem 0;
 }
 
@@ -118,9 +118,31 @@ body {
     content:url('../images/rsz_next-button.png');
 }
 
+.call-to-action img {
+	width: 40%;
+	padding-bottom: 3rem;
+}
 
+.call-to-action h2 {
+	color: #fff;
+	font-size: 2.5rem;
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+}
 
+.social {
+	background-color: #D0F488;/*#BEF781;*/
+	height: 10rem;
+	text-align: center;
+}
 
+.social-icons li {
+	display: inline-block;
+	font-size: 2.5rem;
+	margin-top: 4rem;
+	margin-right: 0.5rem;
+	margin-left: 0.5rem;
+}
 
 
 
