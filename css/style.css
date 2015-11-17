@@ -26,7 +26,7 @@ body {
 	font-size: 4.5rem;
 	font-weight: 600;
 	color: #D0F488;
-	letter-spacing: 0.1rem;
+	letter-spacing: 0.12rem;
 	text-shadow: 2px 2px 7px #01DFA5;
 }
 
@@ -136,10 +136,16 @@ body {
 	text-align: center;
 }
 
+.social h3 {
+	color: #2E2EFE;
+	font-size: 1.4rem;
+	padding-top: 1.5rem;
+}
+
 .social-icons li {
 	display: inline-block;
 	font-size: 2.5rem;
-	margin-top: 4rem;
+	margin-top: 2rem;
 	margin-right: 0.5rem;
 	margin-left: 0.5rem;
 }
