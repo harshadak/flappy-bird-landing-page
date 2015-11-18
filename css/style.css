@@ -45,7 +45,7 @@ body {
 
 .wrapper {
 	text-align: center;
-	width: 70%;
+	width: 90%;
 	margin: 0 auto;
 	background-image: url('../images/transparent.jpg');
 	border: 1px solid #aaa;
@@ -92,10 +92,6 @@ body {
 	-webkit-box-shadow: 0px 0px 32px 6px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 32px 6px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 32px 6px rgba(0,0,0,0.75);
-}
-
-.slick-current img {
-	border: 6px solid #fff;
 }
 
 .slick-prev {
@@ -155,3 +151,34 @@ body {
 	margin-left: 0.5rem;
 }
 
+
+
+/*desktop first approach*/
+
+/*ipad lanscape / small laptop*/
+@media only screen and (max-width: 1024px) {
+	.wrapper {
+		width: 99%;
+	}
+}
+
+/*ipad potrait*/
+@media only screen and (max-width: 768px) {
+	body  {
+		color:red;
+	}
+}
+
+/*iPhone landscape*/
+@media only screen and (max-width: 480px) {
+	body  {
+		color:green;
+	}
+}
+
+/*iPhone portrait*/
+@media only screen and (max-width: 320px) {
+	body  {
+		color:purple;
+	}
+}
