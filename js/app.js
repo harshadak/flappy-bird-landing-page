@@ -31,7 +31,7 @@ $(document).ready(function() {
  		        arrows: false,
  		        centerPadding: '40px',
 		        slidesToShow: 1,
-		        slidesToScroll: 0
+		        slidesToScroll: 1
  		      }
  		    },
  		    {
@@ -51,4 +51,32 @@ $(document).ready(function() {
  		    }
  		  ],
       });
+      $(".play-button").mouseenter(function() {
+                $(this).velocity({
+                    scale: "1.2"
+                }, 500, "easeInOut").velocity("reverse")
+            }),
+      $(".linkedin").mouseenter(function() {
+                $(this).velocity({
+                    scale: "1.2"
+                }, 400, "easeInOut").velocity("reverse")
+            }),
+      $(".github").mouseenter(function() {
+                $(this).velocity({
+                    scale: "1.2"
+                }, 400, "easeInOut").velocity("reverse")
+            });
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
