@@ -25,6 +25,58 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('css'));
 });
 
+
+// Minify index
+gulp.task('html', function () {
+    return gulp.src('index.html')
+        .pipe(minifyHTML({
+            conditionals: true,
+            quotes: true
+        }))
+        .pipe(gulp.dest('build/'));
+});
+
+// JavaScript build task, removes whitespace and concatenates all files
+gulp.task('scripts', function () {
+    return browserify('js/app.js')
+        .bundle()
+        .pipe(source('app.js'))
+        .pipe(buffer())
+        .pipe(uglify())
+        .pipe(gulp.dest('build/js'));
+});
+
+// Including the slick.js
+gulp.task('slick', function () {
+    return gulp.src(['slick/*', 'slick/fonts/*'])
+        .pipe(gulp.dest('build/slick'));
+});
+
+// Including the slick fonts folder
+gulp.task('slick-fonts', function () {
+    return gulp.src(['slick/fonts/*'])
+        .pipe(gulp.dest('build/slick/fonts'));
+});
+
+// Including the font awesome
+gulp.task('fonts', function () {
+    return gulp.src('fonts/*')
+        .pipe(gulp.dest('build/fonts'));
+});
+
+// Styles build task, concatenates all the files
+gulp.task('styles', function () {
+    return gulp.src('css/*.css')
+        .pipe(gulp.dest('build/css'));
+});
+
+// Image optimization task
+gulp.task('images', function () {
+    return gulp.src('images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('build/images'));
+});
+
 // Watch task
 gulp.task('watch', function () {
     gulp.watch('js/app.js', ['jshint']);
@@ -33,3 +85,6 @@ gulp.task('watch', function () {
 
 // Default task
 gulp.task('default', ['jshint', 'sass', 'watch']);
+
+// Build task
+gulp.task('build', ['jshint', 'sass', 'html', 'scripts', 'slick', 'slick-fonts', 'fonts', 'styles', 'images']);
