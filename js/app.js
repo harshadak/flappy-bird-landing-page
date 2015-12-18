@@ -45,6 +45,7 @@ $(document).ready(function () {
             }
         }]
     });
+    $("#heading").velocity("fadeIn", 2000);
     $(".play-button").mouseenter(function () {
         $(this).velocity({
             scale: "1.2"
