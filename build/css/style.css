@@ -5,13 +5,11 @@
     font-size: 100%;
 }
 
-
 /* Common styles */
 
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', Helvetica, sans-serif;
 }
-
 
 /* Setting the background image */
 
@@ -20,14 +18,13 @@ body {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    position: absolute;
-    opacity: 0.8;
+    position: fixed;
+    opacity: 0.6;
     z-index: -999;
     display: block;
     width: 100%;
     height: 100%;
 }
-
 
 /* Header styles */
 
@@ -35,7 +32,6 @@ h1 {
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
 }
-
 .title {
     background-image: url('../images/transparent.jpg');
     text-align: center;
@@ -51,7 +47,6 @@ h1 {
     text-shadow: 2px 2px 7px #01DFA5;
 }
 
-
 /* Wrapper container styles */
 
 .wrapper {
@@ -63,11 +58,10 @@ h1 {
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
     border-radius: 1rem;
-    margin-top: 40rem;
+    margin-top: 4rem;
     margin-bottom: 6rem;
     padding: 1.5rem 0;
 }
-
 .wrapper .intro {
     color: #81DAF5;
     width: 90%;
@@ -75,7 +69,6 @@ h1 {
     margin-left: 0.5rem;
     margin: 0 auto;
 }
-
 .wrapper .intro p {
     text-align: center;
     font-size: 1.25rem;
@@ -84,17 +77,14 @@ h1 {
     letter-spacing: 0.05rem;
 }
 
-
 /* Animation styles for the image slider */
 
 .image-slider {
     padding: 2rem;
 }
-
 .image-slider .slick-slide {
     padding: 1.5rem;
 }
-
 .image-slider div img {
     -webkit-border-radius: 0.25rem;
     -moz-border-radius: 0.25rem;
@@ -103,42 +93,34 @@ h1 {
     -moz-box-shadow: 0px 0px 32px 6px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 32px 6px rgba(0, 0, 0, 0.75);
 }
-
 .slick-prev {
-    left: -68px;
+    left: 4px;
 }
-
 .slick-next {
-    right: -48px;
+    right: 23px;
 }
-
 .slick-prev::before {
     content: url('../images/rsz_previous-button.png');
 }
-
 .slick-next::before {
     content: url('../images/rsz_next-button.png');
 }
-
 
 /* Play Now CSS */
 
 .call-to-action {
     margin-top: 5rem;
 }
-
 .call-to-action img {
     width: 30%;
     padding-bottom: 3rem;
 }
-
 .call-to-action h2 {
     color: #fff;
     font-size: 2.5rem;
     padding-top: 3rem;
     padding-bottom: 2rem;
 }
-
 
 /* Footer CSS */
 
@@ -148,13 +130,11 @@ h1 {
     height: 10rem;
     text-align: center;
 }
-
 .social h3 {
     color: #2E2EFE;
     font-size: 1.4rem;
     padding-top: 1.5rem;
 }
-
 .social-icons li {
     display: inline-block;
     font-size: 2.5rem;
@@ -162,7 +142,6 @@ h1 {
     margin-right: 0.5rem;
     margin-left: 0.5rem;
 }
-
 
 /*desktop first approach*/
 
@@ -184,7 +163,6 @@ h1 {
         width: 35%;
     }
 }
-
 
 /*ipad potrait*/
 
@@ -213,7 +191,6 @@ h1 {
     }
 }
 
-
 /*iPhone landscape*/
 
 @media only screen and (max-width: 480px) {
@@ -233,7 +210,6 @@ h1 {
     }
 }
 
-
 /*iPhone portrait*/
 
 @media only screen and (max-width: 320px) {
@@ -251,5 +227,23 @@ h1 {
     }
     .social-icons li {
         font-size: 2.15rem;
+    }
+}
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .background-image {
+        background: url("../images/bird-2x.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+@media (-webkit-min-device-pixel-ratio: 3),
+(min-resolution: 192dpi) {
+    .background-image {
+        background: url("../images/bird-3x.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 }

@@ -8,7 +8,7 @@
 /* Common styles */
 
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', Helvetica, sans-serif;
 }
 
 /* Setting the background image */
@@ -18,8 +18,8 @@ body {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    position: absolute;
-    opacity: 0.8;
+    position: fixed;
+    opacity: 0.6;
     z-index: -999;
     display: block;
     width: 100%;
@@ -58,7 +58,7 @@ h1 {
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
     border-radius: 1rem;
-    margin-top: 40rem;
+    margin-top: 4rem;
     margin-bottom: 6rem;
     padding: 1.5rem 0;
 }
@@ -94,10 +94,10 @@ h1 {
     box-shadow: 0px 0px 32px 6px rgba(0, 0, 0, 0.75);
 }
 .slick-prev {
-    left: -68px;
+    left: 4px;
 }
 .slick-next {
-    right: -48px;
+    right: 23px;
 }
 .slick-prev::before {
     content: url('../images/rsz_previous-button.png');
