@@ -42,6 +42,7 @@ $(document).ready(function () {
             breakpoint: 320,
             settings: {
                 arrows: false,
+                centerPadding: '40px',
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
