@@ -35,11 +35,14 @@ $(document).ready(function () {
             settings: {
                 arrows: false,
                 centerPadding: '40px',
-                slidesToShow: 1
+                slidesToShow: 1,
+                slidesToScroll: 1
             }
         }, {
             breakpoint: 320,
             settings: {
+                arrows: false,
+                centerPadding: '20px',
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
